@@ -12,9 +12,14 @@ var heading = 0
 # var a = 2
 # var b = "textvar"
 
+func start():
+	show()
+	pass
+
 func _ready():
 	# Called when the node is added to the scene for the first time.
 	# Initialization here
+	hide()
 	screensize = get_viewport_rect().size
 	pass
 
