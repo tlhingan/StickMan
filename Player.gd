@@ -8,24 +8,16 @@ var jumping = false
 var attack = false
 var heading = 0
 
-# class member variables go here, for example:
-# var a = 2
-# var b = "textvar"
-
 func start():
 	show()
 	pass
 
 func _ready():
-	# Called when the node is added to the scene for the first time.
-	# Initialization here
 	hide()
 	screensize = get_viewport_rect().size
 	pass
 
 func _process(delta):
-#	# Called every frame. Delta is time since last frame.
-#	# Update game logic here.
 	var velocity = Vector2()
 
 	kneeling = false
